@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - 0.10
+notifications:
+  - danielqmalta@gmail.com
+
+##
+# função que roda antes do travis executar automaticamente o comando 'npm install'
+##
+before_install:
+  - npm install -g karma-cli
+  - npm install -g protractor
+  - webdriver-manager update
+
+script:
+  - karma start config/karma.config.js --single-run --browsers PhantomJS
