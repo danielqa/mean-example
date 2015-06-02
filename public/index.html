@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="contatooh">
+<head>
+	<meta charset="UTF-8">
+	<title>Bem-vindo</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+	<div class="text-right">
+		<a href="/logout">Logout</a>
+	</div>
+
+    <div ng-view></div>
+
+    <script src="/node_modules/angular/angular.js"></script>
+	<script src="/node_modules/angular-route/angular-route.js"></script>
+	<script src="/node_modules/angular-resource/angular-resource.js"></script>
+
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/routes.js"></script>
+
+	<script src="js/main.js"></script>
+
+	<script src="js/services/InterceptorService.js"></script>
+</body>
+</html>
